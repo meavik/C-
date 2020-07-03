@@ -27,6 +27,11 @@ int main(void){
     Shape <int>*c = new Shape<int>;
     c->radius = 5;
     cout<<"Area of circle--> "<<c->circArea()<<endl;
+    delete r;
+    delete c;
+    c = nullptr;
+    r = nullptr;
+    cout<<r->length<<endl;
 
     return EXIT_SUCCESS;
 }
