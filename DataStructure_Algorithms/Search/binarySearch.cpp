@@ -2,7 +2,7 @@
 using namespace std;
 
 void display(struct Array);
-int binarySearch(struct Array,int,int,int);
+int binarySearch(struct Array,int);
 
 
 struct Array{
@@ -36,7 +36,7 @@ int main(void){
     int ele,index;
     cout<<"Enter the element you want to search: ";
     cin >> ele;
-    index = binarySearch(a,0,a.length-1,ele);
+    index = binarySearch(a,ele);
 
     if (index == -1)
     {
@@ -61,8 +61,10 @@ void display(struct Array arr){
 
 }
 
-int binarySearch(struct Array arr,int low,int high,int key){
-    int mid;
+int binarySearch(struct Array arr,int key){
+    int mid,low,high;
+    low = 0;
+    high = arr.length - 1;
     //static int i = 0;
     while(low<=high){
         
