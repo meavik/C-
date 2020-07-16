@@ -51,6 +51,9 @@ struct Array* arrayIntersection(struct Array* arr1,struct Array* arr2){
             j++;
         }
     }
+    for(;i<arr1->length;i++){
+        arr3->A[k++] = arr1->A[i];
+    }
 
     arr3->size = 10;
     arr3->length = k;
