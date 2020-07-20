@@ -59,7 +59,7 @@ void pairOfElementsSumUsingHashing(struct Array arr,int sumVal){
 
     Array B;
     int maxNum = findMax(arr);
-    B.A = new int[maxNum]{0};
+    B.A = new int[maxNum+1]{0};
     for (size_t i = 0; i < arr.length; i++)
     {
         B.A[arr.A[i]]++;
