@@ -73,7 +73,7 @@ void countDuplicateValuesUsingHashing(struct Array arr){
           B.A[arr.A[i]]++;
       }
 
-      for (size_t i = 0; i <= maxNum; i++)
+      for (size_t i = 0; i < maxNum; i++)
       {
           if (B.A[i]>1)
           {
