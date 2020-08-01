@@ -11,7 +11,7 @@ int main(void)
     {
         i++;
     }
-    // a[i] = '\0';
+    
     i -= 1;
 
     while (i > j)
