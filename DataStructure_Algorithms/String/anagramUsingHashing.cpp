@@ -28,6 +28,9 @@ int main(void){
         }
         
     }
+    else{
+      cout<<"Not Anagram"<<endl;
+      }
 
     return EXIT_SUCCESS;
 }
