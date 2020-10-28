@@ -35,7 +35,7 @@ void mergeSort(int a[], int n){
             mergeFunction(a,low,mid,high);
         }
         if(p/2<n){
-            mergeFunction(a,0,p/2-1,n);
+            mergeFunction(a,0,p/2,n-1);
         }
     }
 }
