@@ -40,10 +40,11 @@ void RecursiveDisplay(struct Node*p){
 }*/
 
 int RecursiveCount(struct Node*p){
-    int countNode=0;
+    //int countNode=0;
     if(p==nullptr){
         return 0;
     }
+    return countNode+RecursiveCount(p->Next);
     return RecursiveCount(p->Next)+1;
 }
 
