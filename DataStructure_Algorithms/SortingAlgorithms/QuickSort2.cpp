@@ -38,7 +38,7 @@ void QuickSort(int a[],int l,int h){
     int loc;
     if(l<h){
         loc = partitionArray(a,l,h);
-        QuickSort(a,l,loc);
+        QuickSort(a,l,loc-1);
         QuickSort(a,loc+1,h);
     }
 }
